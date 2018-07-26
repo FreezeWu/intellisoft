@@ -1,0 +1,428 @@
+/************************************************************************************************************
+For Example:
+[R001]
+Modification Info:	Modified By Ken Appeon 12/01/2007
+Modification Position:	Test01.pbl@w_test.dw_1::clicked() 
+Modification Reason:	Fix BugK091302 about failed to save data after added import project. 
+************************************************************************************************************/
+
+[R001]
+Modification Info:	Modfiied by long appeon 04/25/2017
+Modification Position:	intelliapp.pbl@n_cst_app_population.of_getfieldvalue()
+			intelliapp.pbl@n_cst_app_population.of_get_lucode_by_code()
+Modification Reason:	For Issue: Trying to add affiliation status to application mapping
+
+[R002]
+Modification Info:	Modfiied by long appeon 04/26/2017
+Modification Position:	pfemain.pbl@u_dw.ib_outputing_flag
+			pfemain.pbl@u_dw.of_set_outputing_flag()
+			pfemain.pbl@u_dw.of_get_outputing_flag()
+			pfemain.pbl@u_dw.ue_save_as_pdf()
+			pfemain.pbl@u_dw.ue_save_pdf_for_mailing()
+			report.pbl@w_report.pfc_preclose()
+			report.pbl@u_tab_report_tab.of_is_closewindow_allowed()
+			report.pbl@u_tabpage_report_report.of_is_closewindow_allowed()
+Modification Reason:	For Issue: Bug id 5617 - Cannot email from Standard Reports when using the Outlook email setting
+
+[R003]
+Modification Info:	Modfiied by long appeon 04/28/2017
+Modification Position:	webcrawler.pbl@w_wc_accept_data.of_dw_retrieve()
+Modification Reason:	For Mednax- Webcrawler Data Audit Error Case#70314
+
+[R004]
+Modification Info:	Modfiied by long appeon 05/03/2017
+Modification Position:	pfemain.pbl@u_dw.ue_mail_outlook64()
+			pfemain.pbl@u_dw.ue_mail_bak()
+			action_items.pbl@pfc_cst_nv_fax.of_email_outlookapp()
+			site_survey.pbl@n_cst_outlook.of_send_64bit()
+Modification Reason:	For Bug id 5617 - Cannot email from Standard Reports when using the Outlook email setting.
+
+[R005]
+Modification Info:	Modfiied by long appeon 05/08/2017
+Modification Position:	painters.pbl@pfc_cst_u_data_entry_report_painter.of_show_invisible()
+			report_profile_dw.pbl@d_prf_personal_w_photo
+Modification Reason:	For Provider Profile Issues.
+
+[R006]
+Modification Info:	Modfiied by long appeon 05/10/2017
+Modification Position:	pfeapsrv.pbl@n_cst_String.of_replace_invalid_filename()
+			data_entry.pbl@pfc_cst_nv_image_functions.of_retrieve_image_for_extract()
+Modification Reason:	For V15.3 Bug # 5636 - AppeonWriteFile error when trying to extract documents.
+
+[R007]
+Modification Info:	Modfiied by long appeon 05/12/2017
+Modification Position:	intelliappmods.pbl@d_app_training_buttons2.b_copy_p.tooltip
+Modification Reason:	For V15.3 Cosmetic Bug # 5640 - Application Mapping: Typo in pop-up help for Copy Page
+
+[R008]
+Modification Info:	Modfiied by Stephen appeon 05/12/2017
+Modification Position:	data_entry.pbl@w_app_audit_print.cb_yes.clicked()
+			data_entry_dw.pbl@d_pd_app_audit_rqrd_print_master_org
+			data_entry_dw.pbl@d_pd_app_audit_rqrd_print_master
+Modification Reason:	for the bug of V15.3 Bug #5639 - Checklist report does not include the attempts
+
+[R009]
+Modification Info:	Modfiied by long appeon 05/15/2017
+Modification Position:	auto_export.pbl@pfc_n_cst_ai_export_apb.of_export_data_with_text()
+Modification Reason:	For Dept Chair link field in Export not working (Bug #5642)
+
+[R010]
+Modification Info:	Modfiied by Stephen appeon 05/16/2017
+Modification Position:	import.pbl@n_cst_import.of_preprocess_imp_data()
+Modification Reason:	for the bug of Pre-Process bug (#5641)
+
+[R011]
+Modification Info:	Modfiied by long appeon 05/16/2017
+Modification Position:	intelliappmods.pbl@d_app_field_properties
+Modification Reason:	For Bug id 5643 - Application Mapping not accepting filter because field is not long enough SaaS build 15.3 05102017
+
+[R012]
+Modification Info:	Modfiied by Stephen appeon 05/16/2017
+Modification Position:	data_entry.pbl@pfc_cst_nv_data_entry_functions.of_applfield_audit()
+			data_entry.pbl@pfc_cst_nv_data_entry_functions.of_applfield_audit_delete_last()
+			update.pbl@n_cst_update_asa.of_ver153_release_table1()
+			update.pbl@n_cst_update_sql.of_ver153_release_table1()
+			intellicred_dw@d_view_audit_net_dev_actions_del
+Modification Reason:	for the bug of Concentra - error when adding workflow
+
+[R013]
+Modification Info:	Modfiied by Stephen appeon 05/19/2017
+Modification Position:	security.pbl@w_image_user_access.open()
+Modification Reason:	for the bug of Bug id 5648 - Message should read Image Type Security but reads IntelliReport SaaS, C/s Latest 15.3
+
+[R014]
+Modification Info:	Modfiied by Stephen appeon 05/23/2017
+Modification Position:	intelliapp.pbl@w_intelliapp_popwebsite@rb_data.clicked()
+Modification Reason:	for the bug of Bug id 5650 - FW: Bug in new ipop functionality
+
+[R015]
+Modification Info:	Modfiied by long appeon 05/24/2017
+Modification Position:	utilities_dw.pbl@d_sec_users.sort
+			utilities_dw.pbl@d_sec_facility.sort
+			utilities_dw.pbl@d_user_facil_fix.sort
+			utilities.pbl@w_user_security_fix.cb_dupe.clicked()
+Modification Reason:	For Bug id 5652 - Case 71112 Cannot run User Security Utilities through System>Utilities SaaS 14.2 Build 02082017
+
+[R016]
+Modification Info:	Modfiied by Stephen appeon 05/25/2017
+Modification Position:	intellicred_comp.pbl@w_prac_data_1@dw_p_data.buttonclicked()
+Modification Reason:	for the bug of Bug id 5653 - Texting in Intellicred/App V15.3 SaaS 05182017 and C/S 15.309 05112017
+
+[R017]
+Modification Info:	Modfiied by Stephen appeon 05/26/2017
+Modification Position:	priv_forms.pbl@d_form_pract_priv_request_compare
+Modification Reason:	for the bug of Bug id 5623 - Privilege Comparison Report from Provider Folder on Privileges tab.
+
+[R018]
+Modification Info:	Modfiied by long appeon 05/26/2017
+Modification Position:	privileges.pbl@of_priv_data_source_800
+Modification Reason:	For Bug ID 5654 - Data Source missing Provider data when there are no GRANTED statuses
+
+[R019]
+Modification Info:	Modfiied by Stephen appeon 05/27/2017
+Modification Position:	report_profile_dw.pbl@d_prf_ver_results_prac
+			report_profile_dw.pbl@d_prf_ver_results
+Modification Reason:	for the bug of V15.3 Bug # 5656 - Printing Verif summary from Send To Committee truncates all the dates ( case 00070256)	
+
+[R020]
+Modification Info:	Modfiied by long appeon 05/27/2017
+Modification Position:	auto_export.pbl@w_export_painter.dw_detail.pfc_preupdate()
+Modification Reason:	For  Dept Chair link field in Export not working (Bug #5642)
+
+[R021]
+Modification Info:	Modfiied by Stephen appeon 06/02/2017
+Modification Position:	data_entry.pbl@w_app_audit_print.of_filter_stat()
+			data_entry_dw.pbl@d_pd_app_audit_rqrd_print_header
+			data_entry_dw.pbl@d_pd_app_audit_rqrd_print_body
+Modification Reason:	for the bug of V15.3 Bug #5665 - Checklist Report: Get Expression not vaild when including Attempts
+
+[R022]
+Modification Info:	Modfiied by long appeon 06/05/2017
+Modification Position:	report_profile_dw.pbl@d_scr_personal
+Modification Reason:	For Bug id 5668 - Profile Screen Design: Can't find label for Personal Email
+
+[R023]
+Modification Info:	Modfiied by Stephen appeon 06/08/2017
+Modification Position:	intelliapp.pbl@w_train_app.of_blank_page()
+Modification Reason:	for the bug of Application Mapping annotations do not copy Case#71418 Bug ID#5676
+
+[R024]
+Modification Info:	Modfiied by Stephen appeon 06/09/2017
+Modification Position:	priv_forms.pbl@d_form_pract_priv_request_compare
+Modification Reason:	for the bug of Bug id 5623 - Privilege Comparison Report from Provider Folder on Privileges tab. Case#71446
+
+[R025]
+Modification Info:	Modfiied by long appeon 06/09/2017
+Modification Position:	addhoc.pbl@w_custom_report.of_modify_dw()
+Modification Reason:	For Bug id 5680 - IntelliReport Advanced Screen Design Font Size of Report Header   SaaS Build Date 05272017 and Client Server 15.310 Build date 05252017
+
+[R026]
+Modification Info:	Modfiied by long appeon 06/12/2017
+Modification Position:	intelliappmods.pbl@d_net_dev_action_items_sk.action_status_wf
+			intelliappmods.pbl@d_net_dev_action_items_no_group.action_status_wf
+			intelliappmods.pbl@d_net_dev_action_items.action_status_wf
+			intelliappmods.pbl@d_net_dev_action_items_ai_sk.action_status_wf	
+			data_entry.pbl@pfc_cst_nv_net_dev_new.constructor()
+			data_entry.pbl@pfc_cst_nv_net_dev_new.tab_1.tabpage_ai.dw_net_dev.itemfocuschanged()
+			data_entry.pbl@pfc_cst_nv_net_dev_new.tab_1.tabpage_ai.dw_net_dev.itemchanged()
+			data_entry.pbl@pfc_cst_nv_net_dev_new.is_prior
+			data_entry.pbl@pfc_ia_cst_nv_net_dev_new.of_retrieve_detail()
+			data_entry.pbl@pfc_ia_cst_nv_net_dev_new_action_items.constructor()
+Modification Reason:	For  V15.3 Bug #5674 - Workflow: When Changing the status of one action type, 1 or more actions statuses change to codes
+
+[R027]
+Modification Info:	Modfiied by Stephen appeon 06/12/2017
+Modification Position:	painters.pbl@d_sys_table_fields_active_connect
+			painters.pbl@w_lookup_maint_cleanup.of_find_records()
+Modification Reason:	for the bug of Bug id 5683 - Lookup Cleanup Utility Not Working for Some Lookup Types SaaS 05272017, Client Server V15.311 Build date 06082017
+
+[R028]
+Modification Info:	Modfiied by long appeon 06/14/2017
+Modification Position:	data_entry.pbl@pfc_cst_nv_net_dev_new.tab_1.tabpage_ai.dw_net_dev.pfc_postupdate()
+Modification Reason:	For V15.3 Bug # 5687 - Workflow: Deleting a triggered workflow causes the incomplete steps to kepp reappearing case 00071476 
+
+[R029]
+Modification Info:	Modfiied by long appeon 06/15/2017
+Modification Position:	data_entry.pbl@pfc_cst_nv_net_dev_new.constructor()
+			data_entry.pbl@pfc_cst_nv_net_dev_new.tab_1.tabpage_ai.dw_net_dev.itemfocuschanged()
+			data_entry.pbl@pfc_cst_nv_net_dev_new.tab_1.tabpage_ai.dw_net_dev.itemchanged()
+			data_entry.pbl@pfc_ia_cst_nv_net_dev_new.tab_1.tabpage_ai.dw_net_dev.itemchanged()
+			data_entry.pbl@pfc_ia_cst_nv_net_dev_new_action_items.constructor()
+			intelliappmods.pbl@d_net_dev_action_items_sk.action_status_wf
+			intelliappmods.pbl@d_net_dev_action_items_no_group.action_status_wf
+			intelliappmods.pbl@d_net_dev_action_items.action_status_wf
+			intelliappmods.pbl@d_net_dev_action_items_ai_sk.action_status_wf
+			report_dw@d_dddw_action_status.is_wf
+			intellicred_dw.pbl@d_dddw_code_lookup
+Modification Reason:	For  V15.3 Bug #5674 - Workflow: When Changing the status of one action type, 1 or more actions statuses change to codes
+
+[R030]
+Modification Info:	Modfiied by Stephen appeon 06/19/2017
+Modification Position:	intellicred_comp.pbl@pfc_cst_u_data_entry@dw_detail.pfc_addrow()
+Modification Reason:	for the bug of Bug id 5700 - Trouble adding with Screen Batch Setting SaaS V15.3 05272017 and 06142017 and C/S 15.309 Build Date 5/11/2017
+
+[R031]
+Modification Info:	Modfiied by long appeon 06/19/2017
+Modification Position:	intelliappmods.pbl@d_net_dev_action_items.action_status_wf
+			intelliappmods.pbl@d_net_dev_action_items_ai_sk.action_status_wf
+			intellicred_dw.pbl@d_dddw_code_lookup_wf
+			intellicred_dw.pbl@d_dddw_code_lookup
+Modification Reason:	For  V15.3 Bug #5674 - Workflow: When Changing the status of one action type, 1 or more actions statuses change to codes
+
+[R032]
+Modification Info:	Modfiied by long appeon 06/19/2017
+Modification Position:	action_items_dw.pbl@d_ready_for_comm
+Modification Reason:	For V15.3 Bug # 5701 - Ready for Committee checkbox is not working
+
+[R033]
+Modification Info:	Modfiied by Stephen appeon 06/19/2017
+Modification Position:	import.pbl@n_cst_import_credapp.of_addaddresslink()
+			import.pbl@d_import_ds_pd_address_link
+Modification Reason:	for the bug of IntelliImport with Address data in web version (Bug #5698)
+
+[R034]
+Modification Info:	Modfiied by Stephen appeon 06/20/2017
+Modification Position:	data_entry.pbl@pfc_cst_nv_data_entry_functions.of_create_dynamic_dw()
+			intelliapp.pbl@n_cst_app_population.of_getallscreendata()
+			intelliapp.pbl@n_cst_app_population.of_evaluate_sort()
+Modification Reason:	for the bug of Bug id 5703 - Getting sort error when trying to preview a page in Application Mapping. C/S Version 15.309 Build Date 5/11/2017	
+
+[R035]
+Modification Info:	Modfiied by long appeon 06/19/2017
+Modification Position:	intellicred_comp.pbl@w_mdi.of_menu_security()
+Modification Reason:	For Bug id 5673 - IE Freezes When Trying to Search Providers
+
+[R036]
+Modification Info:	Modfiied by long appeon 06/21/2017
+Modification Position:	intellicred_dw.pbl@d_dddw_code_lookup_wf
+Modification Reason:	For V15.3 Bug # 5702 - Appointments tab: Getting Specify Retrieval Arguments pop-up when clicking on Appointments tab
+
+[R037]
+Modification Info:	Modfiied by Stephen appeon 06/22/2017
+Modification Position:	action_items.pbl@w_send_to_committee@cb_send.clicked()
+Modification Reason:	for the bug of V15.3 Bug # 5709 - Ready for Committee checkbox: Provider shows on Ready for Committee tab but does not show on Post Committee Results
+
+[R038]
+Modification Info:	Modfiied by Stephen appeon 06/29/2017
+Modification Position:	intellicred_comp.pbl@pfc_cst_u_data_entry@dw_browse.rowsfocuschanging()
+			intellicred_comp.pbl@pfc_cst_u_data_entry@dw_browse.pfc_rowchanged()
+			intellicred_comp.pbl@w_prac_data_1.resize()
+Modification Reason:	for the bug of Bug ID #5715 for Case #00071338 Issue With IC
+
+[R039]
+Modification Info:	Modfiied by Stephen appeon 07/06/2017
+Modification Position:	data_entry_dw.pbl@d_personal_data_app
+Modification Reason:	for the bug of Question ID #5718 for Case #71824 Intellisoft error msg
+
+[R040]
+Modification Info:	Modfiied by Stephen appeon 07/11/2017
+Modification Position:	privileges.pbl@d_dddw_clin_area
+Modification Reason:	for the bug of Bug id 5720 - Errors when adding Privileges to a Provider C/S 15.312 June 23, 2017 and SaaS 15.3 Build 06302017
+
+[R041]
+Modification Info:	Modfiied by Stephen appeon 07/17/2017
+Modification Position:	data_entry.pbl@dw_net_dev.pfc_preupdate()
+			data_entry.pbl@dw_net_dev.pfc_addrow()
+			data_entry.pbl@dw_net_dev.pfc_postupdate()
+			update.pbl@n_cst_update_asa.of_ver153_release_table1()
+			update.pbl@n_cst_update_sql.of_ver153_release_table1()
+Modification Reason:	for the bug of Bug id 5719 - Workflow Step Execution Lag Issue V15.3 SaaS Build 06232017
+
+[R042]
+Modification Info:	Modfiied by long appeon 07/19/2017
+Modification Position:	privileges.pbl@d_clin_desc_by_facility
+			privileges.pbl@d_clin_desc
+			privileges.pbl@d_crit_clin_area
+Modification Reason:	For Unable to see Clinical Area drop down list on Privilege tab Case#72014 Bug_id#5724
+
+[R043]
+Modification Info:	Modfiied by Stephen appeon 07/19/2017
+					07/20/2017
+Modification Position:	data_entry.pbl@dw_net_dev.pfc_postupdate()
+			intellicred.pbl@of_app_tracking_update_new()
+			work_flow.pbl@n_cst_workflow_triggers.of_send_mail()
+			work_flow.pbl@d_wf_verif_action_adding_net
+			work_flow.pbl@str_action_item
+			work_flow.pbl@n_cst_workflow_triggers.of_workflow_create_action_items()
+			data_entry.pbl@pfc_cst_nv_data_entry_functions.of_applfield_audit()
+			data_entry.pbl@pfc_cst_nv_net_dev_new.pfc_preupdate()			
+			data_entry.pbl@pfc_cst_nv_data_entry_functions.of_change_dddw()
+			update.pbl@n_cst_update_asa.of_ver153_release_table1()
+			update.pbl@n_cst_update_sql.of_ver153_release_table1()
+			intelliapp.pbl@pfc_cst_u_multi_app_select.constractor()
+			intelliapp.pbl@pfc_cst_u_multi_app_select.of_multi_add()
+			intelliapp.pbl@pfc_cst_u_multi_app_select.of_appl_action_create()
+			intelliapp.pbl@w_batch_add_apps_facilities.of_batch_add_apps()
+			intelliapp.pbl@w_batch_add_apps_facilities.of_add_net_dev_ai_for_pt()
+			intelliapp.pbl@w_batch_add_apps_facilities.cb_create.clicked()
+			intelliappmods@d_appl_tracking_for_batch_add	
+			intelliappmods@d_appl_tracking_for_multi_app		
+			intelliapp.pbl@d_audit_net_dev_action_items_save			
+Modification Reason:	for the bug of Bug id 5719 - Workflow Step Execution Lag Issue V15.3 SaaS Build 06232017
+
+[R044]
+Modification Info:	Modfiied by long appeon 07/25/2017
+Modification Position:	data_entry.pbl@pfc_cst_nv_data_entry_functions.of_applfield_audit()
+			intelliapp.pbl@pfc_cst_u_print_app.of_print_email_app()
+Modification Reason:	For Pikeville-Application Pop App error Bug_id#5727 Case#72096
+
+[R045]
+Modification Info:	Modfiied by Stephen appeon 07/25/2017
+Modification Position:	intellicred_comp.pbl@w_prac_data_1.activate()
+Modification Reason:	for the bug of Bug ID #5715 for Case #00071338 Issue With IC
+
+[R046]
+Modification Info:	Modfiied by long appeon 07/25/2017
+Modification Position:	meet_priv.pbl@n_cst_meeting_creation.of_create_meetings()
+			meet_priv.pbl@n_cst_meeting_creation.of_find_next_date()
+Modification Reason:	For V15.3 Bug # 5728 - Issue with Batch add meetings case 00072063
+
+[R047]
+Modification Info:	Modfiied by Stephen appeon 07/27/2017
+Modification Position:	data_entry.pbl@pfc_ia_cst_nv_net_dev_new_action_items.contructor()
+			data_entry.pbl@pfc_ia_cst_nv_net_dev_new.of_retrieve_detail()
+Modification Reason:	for the bug of Applications not showing in Action Items Case#71665 Bug_id#5733
+
+[R048]
+Modification Info:	Modfiied by long appeon 07/28/2017
+Modification Position:	intelliapp.pbl@w_train_app.of_update_field()
+Modification Reason:	For Bug id 5735 - Partial address query when mapping new Address fields. 
+
+[R049]
+Modification Info:	Modfiied by Stephen appeon 08/01/2017
+Modification Position:	addhoc.pbl@u_cst_dw_design.ue_resize()
+			addhoc.pbl@u_cst_dw_band_painter
+Modification Reason:	for the bug of IntelliReport advanced screen design bug id 5739
+
+[R050]
+Modification Info:	Modfiied by long appeon 08/04/2017
+Modification Position:	pfe_main.pbl@w_master.activate()
+			intellicred_comp.pbl@w_mdi.activate()
+Modification Reason:	For Bug id 5673 - IE Freezes When Trying to Search Providers.
+
+[R051]
+Modification Info:	Modified by Freeze appeon 08/04/2017
+Modification Position:	intellicred.pbl@of_app_tracking_update_new()
+Modification Reason:	For Bug id 5749 - Application Tracking not generating dates automatically
+
+[R052]
+Modification Info:	Modfiied by long appeon 08/07/2017
+Modification Position:	action_items.pbl@pfc_n_cst_ai_printletters.of_printletters()
+Modification Reason:	For Bug id 5753 - Can't populate Prac Corro letter from Action Items   SaaS V15.3 07212017
+
+[R053]
+Modification Info:	Modfiied by long appeon 08/08/2017
+Modification Position:	intellicred.pbl@of_appl_tracking_update_dw()
+			data_entry.pbl@pfc_ia_cst_nv_net_dev_new.of_retrieve_tracking()
+Modification Reason:	For Application Tracking not generating dates automatically Case#72116 Bug_id# 5749
+
+[R054]
+Modification Info:	Modified by Freeze appeon 08/10/2017
+Modification Position:	intelliapp.pbl@pfc_cst_u_print_app.cb_add.click()
+Modification Reason:	For Bug id 5755 - Application is not populating for new provider
+
+[R055]
+Modification Info:	Modfiied by long appeon 08/15/2017
+Modification Position:	action_items.pbl@w_batch_manual_verifications.of_get_prac_data()
+Modification Reason:	For V15.3 Bug  #5758  - Batch Verifications are not filtering on selected facility case 00071879.
+
+[R056]
+Modification Info:	Modified by Freeze appeon 08/17/2017
+Modification Position:	webservice.pbl@n_cst_sertifi.of_refresh_sertifi_status_bak()
+			webservice_docusign.pbl@n_cst_docusign.of_refresh_sertifi_status()
+Modification Reason:	For Bug id 5755 - Application is not populating for new provider
+
+[R057]
+Modification Info:	Modfiied by Stephen appeon 08/25/2017
+Modification Position:	intelliapp.pbl@pfc_cst_u_sitefield_mapping.ue_add()
+Modification Reason:	For Bug of Usability id 5746 - Can't map ipop field SaaS 15.3 07172017
+
+[R058]
+Modification Info:	Modfiied by Stephen appeon 08/29/2017
+Modification Position:	addhoc.pbl@u_cst_dw_design.ue_resize
+			addhoc.pbl@w_intellicred_report_design@cb_resize.clicked
+Modification Reason:	For Bug of Bug id 5780 - IntelliReport Advanced Screen Design Maximized SaaS 15.3 Build 08092017, 08152017, C/S 08102017
+
+[R059]
+Modification Info:	Modfiied by long appeon 08/30/2017
+Modification Position:	intelliappmods.pbl@d_pop_apps_prac
+			intelliapp.pbl@w_intelliapp_popwebsite.of_complete_action()
+Modification Reason:	For Bug id 5784 - Ipop Application duplicating when clicking the Completed button SaaS 15.3 08092017
+
+[R060]
+Modification Info:	Modfiied by long appeon 09/01/2017
+Modification Position:	data_entry.pbl@pfc_cst_nv_data_entry_functions.of_create_dynamic_dw()
+Modification Reason:	Bug id 5703 - Getting sort error when trying to preview a page in Application Mapping. C/S Version 15.309 Build Date 5/11/2017
+
+[R061]
+Modification Info:	Modfiied by Stephen appeon 09/01/2017
+Modification Position:	automation.pbl@n_cst_notification_alert.of_createmail()
+			site_survey.pbl@u_email_edit.of_open()
+Modification Reason:	For Bug of URGENT-Healthronics- IntelliApp Scheduler/Notifications have stop running after upgrade 
+
+[R062]
+Modification Info:	Modfiied by Stephen appeon 09/05/2017
+Modification Position:	intelliapp.pbl@u_imageview_ocr 
+			intellicontract_am.pbl@u_image_edit_cp .ole_edit
+			intellicontract_am.pbl@uo_dm_image_view_cp.ole_edit
+			intellicontract_am.pbl@w_dm_image_cp.ole_edit
+                                          gdiplus.dll / ImageViewer2.OCX / mfc42.dll / msvcrt.dll / TIFF2PDF.dll / viscomdocx.dll / viscomgifenc.dll / viscompdf.dll / viscompdfedit.dll / viscompdfreader.dll / viscompsd.dll
+Modification Reason:	Image Viewer CP Gold control upgrade
+
+[R063]
+Modification Info:	Modfiied by Stephen appeon 09/06/2017
+					09/07/2017
+					09/08/2017
+Modification Position:	intellicontract_am.pbl@w_dm_image_cp.of_pdf2tifbw()
+			intellicontract_am.pbl@uo_dm_image_view_cp.ole_scan
+			agreement_painter.pbl@w_ctx_doc_scan_cp.ole_scan
+			appeon_workaround.pbl@n_cst_reg_control.of_upgrade_ocxs()
+			appeon_workaround.pbl@n_cst_reg_control.of_check_ocx()			
+			scanner.ocx / ImageThumbnailCP.ocx / viscompdfthumbnail.dll
+Modification Reason:	Image Viewer CP Gold control upgrade
+
+[R064]
+Modification Info:	Modfiied by long appeon 09/08/2017
+Modification Position:	data_entry.pbl@pfc_ia_cst_nv_net_dev_new.of_retrieve_detail()
+			data_entry.pbl@pfc_ia_cst_nv_net_dev_new.of_reset_tracking()
+Modification Reason:	For (Bug 5794) Appl Tracking record not deleted when Net Dev Action Item record is deleted
